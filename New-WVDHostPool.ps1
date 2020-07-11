@@ -9,5 +9,3 @@ New-AzWvdHostPool `
  -LoadBalancerType "BreadthFirst" `
  -Location eastus `
  -DesktopAppGroupName "WVD-AppGroup1"
-
- #//TODO #1 @sebassem Add parameters
