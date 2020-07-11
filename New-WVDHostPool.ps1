@@ -3,7 +3,7 @@
 
 ## Connect to Azure
 connect-azaccount
-
+New-AzResourceGroup -Name $resourcegroupname -Location $location
 ## Create a new HostPool
 New-AzWvdHostPool `
  -ResourceGroupName $resourcegroupname `
