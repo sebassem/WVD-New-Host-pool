@@ -21,6 +21,9 @@ param(
 [STRING]$LoadBalancingType
 )
 
+## Create resource group
+New-AzResourceGroup -Name $resourcegroupname -Location $location
+
 
 ## Create a new HostPool
 New-AzWvdHostPool `
