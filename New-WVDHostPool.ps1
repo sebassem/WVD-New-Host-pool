@@ -9,3 +9,4 @@ New-AzWvdHostPool `
  -LoadBalancerType "BreadthFirst" `
  -Location eastus `
  -DesktopAppGroupName "WVD-AppGroup1"
+ 
