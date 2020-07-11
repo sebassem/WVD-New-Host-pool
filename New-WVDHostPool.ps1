@@ -1,3 +1,5 @@
+# //TODO #2 Add parameters @sebassem
+
 ## Connect to Azure
 connect-azaccount
 ## Create a new HostPool
@@ -9,5 +11,3 @@ New-AzWvdHostPool `
  -LoadBalancerType "BreadthFirst" `
  -Location eastus `
  -DesktopAppGroupName "WVD-AppGroup1"
-
- #//TODO #1 @sebassem Add parameters
