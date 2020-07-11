@@ -3,13 +3,31 @@
 ## Connect to Azure
 connect-azaccount
 
+##Initialize parameters
+param(
+[Parameter(Mandatory=$true)]
+[STRING]$resourcegroupname,
+[Parameter(Mandatory=$true)]
+[STRING]$location,
+[Parameter(Mandatory=$true)]
+[STRING]$hostPoolName,
+[Parameter(Mandatory=$true)]
+[STRING]$workspaceName,
+[Parameter(Mandatory=$true)]
+[STRING]$AppGroupName,
+[Parameter(Mandatory=$true)]
+[STRING]$HostPoolType,
+[Parameter(Mandatory=$true)]
+[STRING]$LoadBalancingType
+)
+
 ## Create a new HostPool
 New-AzWvdHostPool `
- -ResourceGroupName "RG-WVD-NewHostPool" `
- -Name "WVD-Hostpool1" `
- -WorkspaceName "WVD-Workspace1" `
- -HostPoolType "Pooled" `
- -LoadBalancerType "BreadthFirst" `
- -Location eastus `
- -DesktopAppGroupName "WVD-AppGroup1"
+ -ResourceGroupName $resourcegroupname `
+ -Name $hostPoolName `
+ -WorkspaceName $workspaceName `
+ -HostPoolType $HostPoolType `
+ -LoadBalancerType $LoadBalancingType `
+ -Location $location `
+ -DesktopAppGroupName $AppGroupName
 
