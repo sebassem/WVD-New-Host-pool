@@ -1,4 +1,4 @@
-
+#//TODO #16 Add parameters @sebassem
 
 
 ## Connect to Azure
@@ -13,3 +13,4 @@ New-AzWvdHostPool `
  -LoadBalancerType $LoadBalancingType `
  -Location $location `
  -DesktopAppGroupName $AppGroupName
+
