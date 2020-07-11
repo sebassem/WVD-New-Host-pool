@@ -1,5 +1,5 @@
 # //TODO #2 Add parameters @sebassem
-
+##added parameters
 ## Connect to Azure
 connect-azaccount
 ## Create a new HostPool
